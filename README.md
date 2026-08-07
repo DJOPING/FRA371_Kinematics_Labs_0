@@ -26,7 +26,12 @@ pip install -r requirements.txt
 ```
 
 ### 2. Run the verification script
+If you use Ubuntu, run:
+```
+python verify_install.py
+```
 
+If you use Window, run:
 ```
 python swift_windows_fix.py
 python verify_install.py
