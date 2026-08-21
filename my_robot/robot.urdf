@@ -1,4 +1,4 @@
-<robot name="Scara_PRRR">
+<robot name="Scara_PRR">
 
   <link name="P1-L">
     <visual>
@@ -72,27 +72,6 @@
     <collision>
       <geometry>
         <mesh filename="package://my_robot/meshes/P1-L3.STL"/>
-      </geometry>
-    </collision>
-  </link>
-
-  <joint name="R3" type="revolute">
-    <origin xyz="0.38 0 -0.1665" rpy="0 0 0"/>
-    <parent link="P1-L3"/>
-    <child  link="P1-E"/>
-    <axis   xyz="0 0 1"/>
-    <limit  lower="-3.14" upper="3.14" effort="100" velocity="0.5"/>
-  </joint>
-
-  <link name="P1-E">
-    <visual>
-      <geometry>
-        <mesh filename="package://my_robot/meshes/P1-E.STL"/>
-      </geometry>
-    </visual>
-    <collision>
-      <geometry>
-        <mesh filename="package://my_robot/meshes/P1-E.STL"/>
       </geometry>
     </collision>
   </link>
